@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Егор & Анастасия | 24.07.2026</title>
+    <meta
+      name="description"
+      content="Свадебное приглашение Егора и Анастасии на 24 июля 2026 года."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="intro-active">
+    <div class="site-bg" aria-hidden="true">
+      <video autoplay muted loop playsinline>
+        <source src="assets/media/timing-reference.mov" />
+      </video>
+    </div>
+    <section class="intro" id="intro" aria-label="Открыть приглашение" tabindex="0">
+      <div class="intro__veil" aria-hidden="true"></div>
+      <div class="envelope-scene" id="openInvite" role="button" aria-label="Открыть приглашение" tabindex="0">
+        <div class="split-envelope split-envelope--top">
+          <img src="assets/media/envelope-intro.png" alt="" aria-hidden="true" />
+        </div>
+        <div class="split-envelope split-envelope--bottom">
+          <img src="assets/media/envelope-intro.png" alt="" aria-hidden="true" />
+        </div>
+        <div class="invite-card">
+          <p>Дорогие родные и друзья</p>
+          <h2>Егор & Анастасия</h2>
+          <time datetime="2026-07-24T14:30:00+04:00">24 / 07 / 2026</time>
+          <span>
+            Наша история любви приводит нас к самому прекрасному моменту — созданию семьи.
+            Мы мечтаем начать новую главу рядом с теми, кто нам особенно дорог.
+            Пусть этот день станет теплым воспоминанием, которое останется с нами навсегда.
+          </span>
+        </div>
+        <div class="zoom-blackout" aria-hidden="true"></div>
+      </div>
+    </section>
+    <div class="transition-blackout" aria-hidden="true"></div>
+
+    <main>
+      <section class="hero" id="top">
+        <img class="hero__photo" src="assets/media/couple-photo.png" alt="Егор и Анастасия" />
+        <div class="hero__shade"></div>
+        <div class="hero__content">
+          <p class="kicker">Приглашаем вас на свадьбу</p>
+          <h1>Егор & Анастасия</h1>
+          <time datetime="2026-07-24T14:30:00+04:00">24/07/2026</time>
+          <p class="time-note">14:30</p>
+        </div>
+      </section>
+
+      <section class="section section--letter">
+        <p class="script-bg">Love</p>
+        <div class="section__inner">
+          <h2>Дорогие родные<br />и друзья</h2>
+          <p class="lead">
+            Наша история любви приводит нас к самому прекрасному моменту — созданию семьи.
+            И мы мечтаем начать новую главу рядом с теми, кто нам особенно дорог.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--calendar" aria-label="Дата и обратный отсчет">
+        <div class="section__inner calendar-layout">
+          <div class="calendar-card">
+            <p class="script-bg calendar-card__script">Wedding</p>
+            <p class="calendar-card__title">Июль <span>2026</span></p>
+            <div class="calendar-grid calendar-grid--days" aria-hidden="true">
+              <span>ПН</span><span>ВТ</span><span>СР</span><span>ЧТ</span><span>ПТ</span><span>СБ</span><span>ВС</span>
+            </div>
+            <div class="calendar-grid calendar-grid--dates" aria-label="Календарь июля 2026">
+              <span></span><span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+              <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span>
+              <span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span>
+              <span>20</span><span>21</span><span>22</span><span>23</span><span class="heart-date">24</span><span>25</span><span>26</span>
+              <span>27</span><span>28</span><span>29</span><span>30</span><span>31</span><span></span><span></span>
+            </div>
+          </div>
+
+          <div class="countdown" aria-label="Обратный отсчет до свадьбы">
+            <h2>До свадьбы</h2>
+            <p>24 июля 2026, 14:30</p>
+            <div class="calendar-location">
+              <span>Локация</span>
+              <strong>Ресторан «Аляска»</strong>
+              <p>ул. Александровская, 60к1</p>
+            </div>
+            <div class="countdown__grid" id="countdown">
+              <div><strong data-unit="days">0</strong><span>дней</span></div>
+              <div><strong data-unit="hours">0</strong><span>часов</span></div>
+              <div><strong data-unit="minutes">0</strong><span>минут</span></div>
+              <div><strong data-unit="seconds">0</strong><span>секунд</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--timing" id="timing">
+        <div class="section__inner">
+          <h2>Тайминг</h2>
+          <p class="section-subtitle">Все события указаны по ульяновскому времени</p>
+          <div class="timeline" id="timeline">
+            <svg class="timeline__path" viewBox="0 0 360 760" preserveAspectRatio="none" aria-hidden="true">
+              <path
+                id="heartPath"
+                d="M180 34 C 270 104, 88 154, 182 250 S 284 386, 178 492 S 88 610, 184 736"
+              />
+            </svg>
+            <div class="rolling-heart" id="rollingHeart" aria-hidden="true">♥</div>
+            <article class="timeline__item timeline__item--left" style="--top: 78px">
+              <time>14:30</time>
+              <p>Сбор гостей</p>
+            </article>
+            <article class="timeline__item timeline__item--right" style="--top: 238px">
+              <time>15:00</time>
+              <p>Регистрация</p>
+            </article>
+            <article class="timeline__item timeline__item--left" style="--top: 430px">
+              <time>16:00</time>
+              <p>Начало банкета</p>
+            </article>
+            <article class="timeline__item timeline__item--right" style="--top: 650px">
+              <time>22:00</time>
+              <p>Завершение банкета</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--dress">
+        <div class="section__inner split">
+          <div>
+            <h2>Дресс-код</h2>
+            <p class="lead">
+              Для нас главное — ваше присутствие! Но мы будем рады, если в своих нарядах
+              вы поддержите цветовую гамму нашей свадьбы.
+            </p>
+          </div>
+          <div class="palette" aria-label="Цвета дресс-кода">
+            <span style="--swatch: #fbfaf6"></span>
+            <span style="--swatch: #dfbf98"></span>
+            <span style="--swatch: #5c4335"></span>
+            <span style="--swatch: #a7b8ca"></span>
+            <span style="--swatch: #d6dde5"></span>
+            <span style="--swatch: #263b61"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--rsvp" id="rsvp">
+        <div class="section__inner">
+          <h2>Подтвердите присутствие</h2>
+          <p class="lead">
+            Пожалуйста, подтвердите свое присутствие, чтобы мы могли спланировать все
+            наилучшим образом.
+          </p>
+          <form class="rsvp" id="rsvpForm">
+            <label>
+              Ваше имя
+              <input name="name" autocomplete="name" placeholder="Например, Иван и Мария" required />
+            </label>
+            <label>
+              Контакт для связи
+              <input name="contact" autocomplete="tel" placeholder="Телефон или @telegram" required />
+            </label>
+            <label>
+              Гостей
+              <select name="guests" required>
+                <option value="1">1 гость</option>
+                <option value="2">2 гостя</option>
+                <option value="3">3 гостя</option>
+                <option value="4">4 гостя</option>
+              </select>
+            </label>
+            <label>
+              Комментарий
+              <textarea name="comment" rows="3" placeholder="Пожелания, вопросы или особенности"></textarea>
+            </label>
+            <button class="button button--dark" type="submit">Подтвердить</button>
+            <p class="rsvp__note" id="rsvpNote" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section section--contacts">
+        <div class="section__inner split">
+          <div>
+            <h2>Контакты жениха<br />и невесты</h2>
+          </div>
+          <div class="contacts">
+            <a href="tel:+79378752229">Егор <span>+7 (937) 875-22-29</span></a>
+            <a href="tel:+79374543345">Анастасия <span>+7 (937) 454-33-45</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
