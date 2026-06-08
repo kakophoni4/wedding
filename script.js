@@ -1,5 +1,5 @@
 const WEDDING_TARGET = new Date("2026-07-24T14:30:00+04:00").getTime();
-const RSVP_WEBHOOK_URL = "/api/rsvp";
+const RSVP_WEBHOOK_URL = "/api/rsvp.php";
 
 const body = document.body;
 const intro = document.getElementById("intro");

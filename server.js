@@ -24,7 +24,7 @@ const types = {
 
 const server = http.createServer(async (req, res) => {
   try {
-    if (req.method === "POST" && req.url === "/api/rsvp") {
+    if (req.method === "POST" && (req.url === "/api/rsvp" || req.url === "/api/rsvp.php")) {
       await handleRsvp(req, res);
       return;
     }
