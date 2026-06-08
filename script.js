@@ -14,20 +14,10 @@ function openInvite() {
   inviteWasOpened = true;
   body.classList.add("invite-opening");
   window.setTimeout(() => {
-    body.classList.add("invite-zoom");
-  }, 2850);
-  window.setTimeout(() => {
-    body.classList.add("invite-blackout");
-  }, 3150);
-  window.setTimeout(() => {
     body.classList.remove("intro-active");
-    body.classList.add("invite-reveal");
+    body.classList.add("invite-reveal", "invite-open");
     document.getElementById("top")?.scrollIntoView({ behavior: "auto" });
-  }, 4300);
-  window.setTimeout(() => {
-    body.classList.add("invite-open");
-    body.classList.remove("invite-blackout");
-  }, 5700);
+  }, 1600);
 }
 
 intro?.addEventListener("click", openInvite);
@@ -121,7 +111,7 @@ form?.addEventListener("submit", async (event) => {
     });
 
     if (response.ok) {
-      note.textContent = "Спасибо! Ваш ответ отправлен.";
+      note.textContent = "Спасибо!";
       form.reset();
       return;
     }

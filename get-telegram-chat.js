@@ -23,11 +23,21 @@ fetch(`https://api.telegram.org/bot${token}/getUpdates`)
       return;
     }
 
+    const seen = new Set();
+
     for (const update of data.result) {
-      const message = update.message || update.channel_post;
+      const message = update.message || update.edited_message || update.channel_post;
       const chat = message?.chat;
-      if (!chat) continue;
-      console.log(`chat_id=${chat.id} (${chat.type}${chat.username ? ", @" + chat.username : ""})`);
+      if (!chat || seen.has(chat.id)) continue;
+      seen.add(chat.id);
+
+      const from = message.from;
+      const name = [from?.first_name, from?.last_name].filter(Boolean).join(" ");
+      const username = from?.username ? `@${from.username}` : "";
+      const title = chat.title || chat.first_name || "";
+      console.log(
+        `chat_id=${chat.id} | type=${chat.type} | ${title || name || "без имени"} ${username}`.trim(),
+      );
     }
   })
   .catch((error) => {
